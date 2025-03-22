@@ -90,7 +90,7 @@ The project uses Razor Pages for a clean and modular architecture. The `_Employe
 
 3. **Object-Oriented Design**:
    - The `Employee` base class defines shared properties like `Name`, `Department`, and `GetRate()`.
-   - Subclasses like `Contractor` and `FullTimeEmployee` extend the base class with specific behavior.
+   - Subclasses like `Contractor`, `SalaryE,ployee`, and `HourlyEmployee` extend the base class with specific behavior.
 
 ## Future Enhancements
 
@@ -102,6 +102,11 @@ The project uses Razor Pages for a clean and modular architecture. The `_Employe
 
 This project is a hands-on demonstration of building a real-world web application using Razor Pages in .NET Core. It showcases the power of OOP concepts like abstract classes and polymorphism while integrating modern web development techniques like AJAX for a seamless user experience.
 
----
+## License
 
-Happy coding! 🚀
+MIT
+
+## Author
+
+Kory Becker
+https://primaryobjects.com
