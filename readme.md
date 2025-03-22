@@ -22,7 +22,7 @@ This project demonstrates the power of object-oriented programming (OOP) concept
 ## Project Structure
 
 ```
-c:\Users\kory\Desktop\Employees
+Employees
 │
 ├── Employees
 │   ├── Pages
