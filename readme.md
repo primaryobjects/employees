@@ -3,6 +3,8 @@ Build a Real-World Web App with .NET Core and Razor Pages
 
 This project demonstrates the power of object-oriented programming (OOP) concepts like abstract classes, polymorphism, and dynamic updates using Razor Pages in C# .NET Core. Follow along to learn how to build a dynamic web application that allows you to manage employees with features like adding, editing, and deleting records - without refreshing the page.
 
+![Employees Management Dashboard](screenshot.gif)
+
 ## Features
 
 - **Dynamic Employee Management**: Add, edit, and delete employees dynamically using AJAX.
