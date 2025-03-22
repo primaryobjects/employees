@@ -1,0 +1,34 @@
+@using Employees.Pages
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th style="width:200px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in IndexModel.Employees) // Access static property using class name
+        {
+            <tr data-id="@employee.Id" class='hover-tooltip'>
+                <td class='controls' contenteditable="true" title="@employee.ToString()">@employee.Name</td>
+                <td contenteditable="true">@employee.Department</td>
+                <td contenteditable="true">@employee.GetRate()</td>
+                <td>
+                    <form method="post" asp-page-handler="Save" class="ajaxForm" onsubmit="updateHiddenInputs(this)">
+                        <input type="hidden" name="id" value="@employee.Id" />
+                        <input type="hidden" name="name" value="@employee.Name" />
+                        <input type="hidden" name="department" value="@employee.Department" />
+                        <button type="submit" class="saveButton">Save</button>
+                    </form>
+                    <form method="post" asp-page-handler="Delete" class="ajaxForm">
+                        <input type="hidden" name="id" value="@employee.Id" />
+                        <button type="submit" class="deleteButton" onclick="return onDelete(event)">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
